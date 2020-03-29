@@ -13,3 +13,7 @@ def get_class(request):
 
 # use this module to build api for software
 # 视图模块
+
+
+def refuse(requset):
+    return HttpResponse("403 Forbidden<br/><br/>您没有权限。")
