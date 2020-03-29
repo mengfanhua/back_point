@@ -12,3 +12,4 @@ def get_class(request):
     return HttpResponse(json.dumps(list1, ensure_ascii=False))
 
 # use this module to build api for software
+# 视图模块
