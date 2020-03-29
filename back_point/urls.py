@@ -22,3 +22,5 @@ from student_helper import views as sh_views
 urlpatterns = [
     url(r'^my/api$', sh_views.get_class, name='my_api')
 ]
+
+# 用此方法调用视图模块的函数
