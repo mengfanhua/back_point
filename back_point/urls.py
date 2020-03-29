@@ -20,7 +20,8 @@ from student_helper import views as sh_views
 
 
 urlpatterns = [
-    url(r'^my/api$', sh_views.get_class, name='my_api')
+    url(r'^my/api$', sh_views.get_class, name='my_api'),
+    url(r'^$', sh_views.refuse, name='refuse')
 ]
 
 # 用此方法调用视图模块的函数
