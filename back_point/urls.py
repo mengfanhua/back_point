@@ -20,7 +20,8 @@ from student_helper import views as sh_views
 
 
 urlpatterns = [
-    url(r'^my/api$', sh_views.get_class, name='my_api'),
+    url(r'^api$', sh_views.get_class, name='my_api'),
+    url(r'^test$', sh_views.get_one_data, name='test'),
     url(r'^$', sh_views.refuse, name='refuse')
 ]
 
