@@ -5,6 +5,7 @@ from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 from student_helper.models import *
 
+
 @csrf_exempt
 def get_class(request):
     # if request.method == "POST":
