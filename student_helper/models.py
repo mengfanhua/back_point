@@ -8,7 +8,8 @@ class Users(models.Model):
 
 
 class ClassPlan(models.Model):
-    uid = models.ForeignKey(Users, on_delete=models.CASCADE, to_field="uid")
+    uid = models.CharField(max_length=8)
+    semester = models.CharField(max_length=4)
     cid = models.CharField(max_length=20)
     cname = models.CharField(max_length=70)
     pid = models.CharField(max_length=4, null=True, blank=True)
@@ -17,7 +18,7 @@ class ClassPlan(models.Model):
     position = models.CharField(max_length=23)
 
     class Meta:
-        unique_together = ["uid", "cid", "week", "position"]
+        unique_together = ["uid", "semester", "cid", "week", "position"]
 
 
 class poem(models.Model):
